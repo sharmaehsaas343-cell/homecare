@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterans & Client-Directed Care Program | Dhanvantari Wellness Inc.</title>
+    <style>
+        :root {
+            --primary-blue: #0d47a1;
+            --accent-blue: #1e88e5;
+            --light-bg: #f4f6f9;
+            --dark-text: #2c3e50;
+            --white: #ffffff;
+            --border-color: #d1d8e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+        }
+
+        /* Hero Header Section */
+        .hero-banner {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Main Content Wrapper */
+        .container {
+            max-width: 1100px;
+            margin: -2rem auto 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* White Info Cards */
+        .info-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            border-bottom: 2px solid var(--light-bg);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        /* Program Grid Checklist */
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .grid-item {
+            background: var(--light-bg);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.2rem;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .grid-item strong {
+            display: block;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+        }
+
+        /* Two Column Service Splits */
+        .services-split {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .service-column {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-list li {
+            position: relative;
+            padding-left: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .service-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-weight: bold;
+        }
+
+        /* Contact & Intake Form styling */
+        .intake-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
+        }
+
+        input, textarea, select {
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+
+        .submit-btn {
+            grid-column: span 2;
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .submit-btn:hover {
+            background: var(--accent-blue);
+        }
+
+        /* Responsive Breakdowns */
+        @media (max-width: 768px) {
+            .intake-form {
+                grid-template-columns: 1fr;
+            }
+            .form-group.full-width, .submit-btn {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero trust component -->
+    <header class="hero-banner">
+        <h1>Dhanvantari Wellness Inc.</h1>
+        <p>Empowering independence through clinical excellence, authorized care coverage coordination, and compassionate home care navigation across Calgary.</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- Section 1: Overview and criteria check -->
+        <section class="info-card">
+            <h2>Authorized Program Coverages</h2>
+            <p>We work directly alongside funded programs, including <strong>Alberta's Client-Directed Home Care (CDHCI) initiative</strong> and specialized independence pathways, helping families seamlessly bill their care directly without overwhelming out-of-pocket stress.</p>
+            
+            <div class="program-grid">
+                <div class="grid-item">
+                    <strong>Direct Billing Options</strong>
+                    We handle portal management directly through Alberta Blue Cross, keeping your focus completely on health and recovery.
+                </div>
+                <div class="grid-item">
+                    <strong>Custom Care Allocation</strong>
+                    Select the precise nurse or helper framework that matches your approved individual budget and clinical criteria.
+                </div>
+                <div class="grid-item">
+                    <strong>Maintained Independence</strong>
+                    All programs are dynamically tailored to defer institutional transitions, ensuring you live safely inside your community.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Clinical Split vs Personal Split -->
+        <section class="info-card">
+            <h2>Comprehensive Program Offerings</h2>
+            <div class="services-split">
+                <div class="service-column">
+                    <h3>🩺 Professional Nursing Services</h3>
+                    <ul class="service-list">
+                        <li>Medication management & clinical oversight</li>
+                        <li>Chronic condition stability checks</li>
+                        <li>Post-surgery therapeutic care support</li>
+                        <li>Nurse-led health assessments</li>
+                    </ul>
+                </div>
+                <div class="service-column">
+                    <h3>🤍 Personal & Home Support</h3>
+                    <ul class="service-list">
+                        <li>Daily activity assistance (hygiene, mobility)</li>
+                        <li>Nutritional support & custom meal preparation</li>
+                        <li>Light home cleaning & environment management</li>
+                        <li>Escort service for vital clinical visits</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Interactive intake component -->
+        <section class="info-card">
+            <h2>Initiate Your Intake Consultation</h2>
+            <p>Ready to establish coverage coordinates or ask specific scheduling questions? Complete the brief routing intake below, and our care management group will follow up with your family.</p>
+            
+            <form class="intake-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="client-name">Full Client Name</label>
+                    <input type="text" id="client-name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">Contact Phone Number</label>
+                    <input type="tel" id="contact-phone" required placeholder="587-xxx-xxxx">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="program-type">Current Program Framework</label>
+                    <select id="program-type">
+                        <option value="cdhci">Client-Directed Home Care (CDHCI)</option>
+                        <option value="private">Private Pay Consultation</option>
+                        <option value="other">Other Coverage Framework</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="notes">Brief Description of Health & Support Needs</label>
+                    <textarea id="notes" rows="4" placeholder="Share any specific service details, scheduling preferences, or language matching requirements..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Request to Care Director</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
